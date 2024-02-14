@@ -2,39 +2,47 @@
 
 ## Node.js Backend Challenge: Insurance Policy Quote Integration
 
-### Scenario:
+### Scenario
+
 You work for UTSafe Insurance, a fictitious insurance company in Utha. Your task is to create a backend service that integrates with an external insurance dispatcher API, fetches quotes based on user input, and returns the best three quotes to the front-end.
 
-### Requirements:
+### Requirements
 
-#### Setup:
+#### Setup
+
 Initialize a new Node.js project using TypeScript.
 Set up a PostgreSQL database using your preferred ORM (e.g., TypeORM, Sequelize).
 
-#### API Endpoints:
+#### API Endpoints
+
 `/api/quotes`: POST request that takes user details (name, age, car model, years of driving experience) and fetches insurance quotes.
 `/api/quotes/best-three`: GET request that retrieves the best three quotes (lowest price) from the previously fetched quotes.
 
-#### Integration:
+#### Integration
+
 Integrate with a mocked insurance dispatcher API. Use tools like json-server or MirageJS to mock the external API.
 
-#### Database:
+#### Database
+
 Store all fetched quotes in the PostgreSQL database with relevant user details.
 
-#### Error Handling:
+#### Error Handling
+
 Properly handle potential errors like invalid user input, API failures, etc.
 
-#### Documentation:
+#### Documentation
+
 Provide a brief README detailing how to set up and run the project.
 
-#### Bonus (not required, but good to have):
+#### Bonus (not required, but good to have)
+
 - Implement caching to speed up repeated requests.
 - Include unit and integration tests.
 - Implement a rate-limiting mechanism to avoid overloading the mocked dispatcher API.
 - Containerize the application using Docker.
 - Use an AWS service, like AWS Lambda, to showcase a serverless deployment.
 
-#### Evaluation Points (Total: 100 points):
+#### Evaluation Points (Total: 100 points)
 
 - Project Setup (20 points)
 - Proper TypeScript setup: 10 points.
@@ -51,6 +59,7 @@ Provide a brief README detailing how to set up and run the project.
 - Clear and concise README: 10 points.
 
 #### Bonus Points (up to 10 points each)
+
 - Caching: 5 points.
 - Testing: 5 points.
 - Rate limiting: 5 points.
